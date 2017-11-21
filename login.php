@@ -31,7 +31,7 @@
     <span><a href='verPreguntas.php' id="verPreguntas" style="display:none">Ver preguntas</a></span>
     <span><a href='verPreguntasXML.php' id="verPreguntasXML" style="display:none">Ver preguntas XML</a></span>
     <span><a href='gestionarPreguntas.php' id="gestionar" style = "display:none" >Gestionar preguntas</a></span>
-    <span><a href='obtenerPreguntasSW.php' id="obtener">Obtener preguntas SW</a></span>
+    <span><a href='obtenerPreguntasSW.php' id="obtener" style="display:none">Obtener preguntas SW</a></span>
 	</nav>
     <section class="main" id="s1">
     

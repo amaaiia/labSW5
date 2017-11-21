@@ -31,6 +31,7 @@
     <span><a href='verPreguntas.php' id="verPreguntas" style="display:none">Ver preguntas</a></span>
     <span><a href='verPreguntasXML.php' id="verPreguntasXML" style="display:none">Ver preguntas XML</a></span>
     <span><a href='gestionarPreguntas.php' id="gestionar" style = "display:none" >Gestionar preguntas</a></span>
+    <span><a href='obtenerPreguntasSW.php' id="obtener">Obtener preguntas SW</a></span>
 	</nav>
     <section class="main" id="s1">
     
@@ -94,7 +95,8 @@ if (isset ($_POST['loginEmail'])){
         echo "<script> logueado('$nom','$img'); $('#formLogin').hide(); $('#mensaje').show();</script></br>";
         echo "<script>$('#preguntas').attr('href','pregunta.php?usuario=$usuario'); </script>";
         echo "<script>$('#creditos').attr('href','creditos.php?usuario=$usuario'); </script>";
-        echo "<script> $('#gestionar').attr('href','gestionPreguntas.php?usuario=$usuario');</script>";   
+        echo "<script> $('#gestionar').attr('href','gestionPreguntas.php?usuario=$usuario');</script>"; 
+	echo "<script> $('#obtener').attr('href','obtenerPreguntasSW.php?usuario=$email');</script>";
     }
     else{
       $mensaje = "Usuario o contraseña incorrectos, intentalo de nuevo"; 

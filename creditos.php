@@ -73,20 +73,14 @@
   
     $(document).ready(
         function(){
-            alert("aqui");
             getLocation();
-                    
-                   alert(d);
                 });
 
             
             function getLocation() {
                 if (navigator.geolocation) {
-                    alert("no error");
                     navigator.geolocation.getCurrentPosition(mostrarCoordenadas);
-                } else {
-                    alert("error");
-                }
+                } 
             }
             
             function mostrarCoordenadas(position) {
